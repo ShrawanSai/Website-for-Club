@@ -1,0 +1,222 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <title>
+            VIT TREKKING CLUB
+        </title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+
+        <link rel="stylesheet" href=" {% static 'board/css/vtcwebcss.css' %} ">
+        <link rel="stylesheet" href=" {% static 'board/css/team_pg2.css' %} ">
+        <link rel="stylesheet" href=" {% static 'board/css/mycarousel.css' %} ">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial scale=1, shrink-to-fit=no">
+        <script src=" {% static 'board/js/vtcwebsite.js' %} "></script>
+
+      </head>
+    <body style="overflow:auto">
+        
+        <div id="HOME" class="container-fluid bg" style="background: url( {% static 'board/default_back_bg.png' %} ) no-repeat;background-size: 100% 100%; height:700px;">
+          <div class="row">
+            <div class="col-sm-4">
+              <img id="logo" src=" {% static 'board/vtc_logo.png' %} " align="left" height="90px" width="90px" style=" margin-top: 10px;">
+            </div>
+            <div class="col-sm-2"></div>
+              <div class="col-sm-6" style="z-index: 1;"> <!--
+                <ul class="nav d-flex flex-column flex-sm-row">
+                  <li class="nav-item"><a class="nav-link" style="text-decoration: none; color:green; " href="#HOME">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link" style="text-decoration: none; color:green; " href="">BLOG</a></li>
+                  <li class="nav-item"><a class="nav-link" style="text-decoration: none; color:green; " href="#ABOUT">ABOUT</a></li>
+                  <li class="nav-item"><a class="nav-link" style="text-decoration: none; color:green; " href="">EVENTS</a></li>
+                  <li class="nav-item"><a class="nav-link" style="text-decoration: none; color:green; " href="">OUR BOARD</a></li>
+                  <li class="nav-item"><a class="nav-link" style="text-decoration: none; color:green; " href="">CONTACT</a></li>
+                  </ul> -->
+              
+          <nav class="navbar navbar-expand-sm bg-none navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="position: absolute;top: -70px;right: 0%;">
+              <span class="navbar-toggler-icon" style="border-color: green; background-color: green;"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" style="text-decoration: none; color:green; " href="{% url 'home' %}#HOME">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="text-decoration: none; color:green; " href="{% url 'blog:all_blogs' %}">BLOGS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="text-decoration: none; color:green; " href="{% url 'home' %}#ABOUT">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="text-decoration: none; color:green; " href="{% url 'home' %}#EVENTS">EVENTS</a>
+                </li>   
+                <li class="nav-item">
+                  <a class="nav-link" style="text-decoration: none; color:green; " href="{% url 'home' %}#BOARD">BOARD</a>
+                </li>       
+                <li class="nav-item">
+                  <a class="nav-link" style="text-decoration: none; color:green; " href="{% url 'home' %}#CONTACT">CONTACT</a>
+                </li>   
+              </ul>
+            </div>  
+            
+          </nav> </div></div>
+          
+                <p id="text" style="color:white; opacity: 0;">VIT TREKKING CLUB</p>
+                <div id="text2" style="color: white;margin-top: -20px;opacity:0;"> Nature. Zeal. Camaraderie. </div>
+
+                <div><img src=" {% static 'board/default_front_bg.png' %} " width="100%" height="700px" style="position: absolute; top:0px; left: 0px; border: none;"></div>
+
+        </div>
+            
+        <!-------------------------------------------------->
+        
+            <div class="parallax" style="text-align: center;background-color: rgba(0,0,0,0.7); background-image: url( {% static 'board/we_are.png' %} )">
+            <span id="weare" style="color: white;">WE ARE..</span></div>
+           
+            
+            <center>
+            <div id="ABOUT" class="container-fluid" style="min-height: 50%;">
+              <div id="about" class="row" style="border: solid rgb(31, 194, 26); min-height: 50%;">
+                <div class="col-sm-6">
+                  <img id="cycle" src=" {% static 'board/cycle2.png' %} " >
+                  </div>
+        
+                <div id="cyctext" class="col-sm-6" style="text-align: justify;">
+                  .. a group of dedicated trekkers aimed to conquer the best possible trails. Our motto is to find like-minded individuals that share the same enthusiasm to connect with the environment around us in all its raw glory, by going on expeditions and treks. 
+                  It’s not the mountain we conquer, but ourselves."
+                  We are a team with adventurous zeal and our leaders are equipped with plentiful experience and knowledge that has led us to great heights, quite literally. Trekking is one of the most cherished introductions to the mountains and with us, it becomes much more awesome. With us, you can expect unique experiences to get you off the well-trodden trails.
+                </div>
+                
+              </div>
+            </div>
+            </center>
+            
+            <!-------------------------------------------------->
+
+            <div class="parallax" style="background-image: url( {% static 'board/our_events.png' %} );background-color: rgba(0,0,0,0.7);"><span id="ourevents" style="color: white;">OUR EVENTS</span></div>
+
+            <div id="EVENTS" style="height: 100%;"> 
+              <div id="car" class="carousel" data-ride="carousel" style="width: 97%;height: 90%;margin-left: 2.5%;margin-top: 5%;">
+
+                
+                <ul class="carousel-indicators" style="position: absolute;left: 0%;right: 50%;">
+                  <li data-target="#car" data-slide-to="0" class="active"></li>
+                  <li data-target="#car" data-slide-to="1"></li>
+                  <li data-target="#car" data-slide-to="2"></li>
+                  <li data-target="#car" data-slide-to="3"></li>
+                  <li data-target="#car" data-slide-to="4"></li>
+                  <li data-target="#car" data-slide-to="5"></li>
+                  <li data-target="#car" data-slide-to="6"></li>
+                  <li data-target="#car" data-slide-to="7"></li>
+                  <li data-target="#car" data-slide-to="8"></li>
+                </ul>
+
+               
+                <div class="carousel-inner" >
+
+                  <div class="carousel-item active">
+                    <img src=" {{ first_event.event_image.url }} " alt="{{first_event.event_title}}" align="left" class="img-fluid"><div class="car_text  col-xs-1 col-sm-4">
+                      <div style="text-align: center;">
+                      <h1>{{first_event.event_title}}</h1>
+                      {{first_event.event_subtitle}}<br><br>
+                      </div>
+                      <div class="d-block col-xs-1 col-sm-12">
+                        {{first_event.event_desc}}
+                        {{ first_event.event_image.url }}
+                    </div>
+                    </div>
+                    <div class="carousel-caption" >
+                      <h2>{{first_event.event_title}}</h2>
+                    </div></div>
+
+                    {% for e in events %}
+
+                    <div class="carousel-item">
+                        <img src=" {{ e.event_image.url }} " alt="{{e.event_title}}" align="left" class="img-fluid"><div class="car_text  col-xs-1 col-sm-4">
+                          <div style="text-align: center;">
+                          <h1>{{e.event_title}}</h1>
+                          {{e.event_subtitle}}<br><br>
+                          </div>
+                          <div class="d-block col-xs-1 col-sm-12">
+                            {{e.event_desc}}
+                        </div>
+                        </div>
+                        <div class="carousel-caption" >
+                          <h2>{{e.event_title}}</h2>
+                        </div></div>
+
+                        {% endfor %}
+                
+
+                </div>
+                
+
+                <a class="carousel-control-prev" href="#car" data-slide="prev" style="opacity: 0.6;width: 5%;">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#car" data-slide="next" style="opacity: 0.6;width: 5%;">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+                  </div>
+
+            <!-------------------------------------------------->
+
+
+        <div class="parallax" style="background-image: url( {% static 'board/our_team.png' %} ); background-color: rgba(0,0,0,0.7);"><span id="ourteam" style="color: white;">OUR TEAM</span></div> 
+       
+            <div id="BOARD" style="background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url( {% static 'board/board.png' %} )"">
+                <div class="tier1 row">
+                    {% for m in executives %}
+                    <div class="container1 col-sm-4">
+                        <img src=" {{ m.image.url }} " height="150" width="150" class="try">
+                            <div class="overlay1">
+                                <div id="text11"> {{ m.board_member_name }} <br> <br>  {{ m.board_title }}</div>
+                            </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+
+                {% for row in members %}
+                    <div class="tier2 row">
+                        {% for m in row%}
+                        <div class="container1 col-sm-2">
+                            <img src="{{ m.image.url }}" height="150" width="150" class="try">
+                            <div class="overlay1">
+                                <div id="text21">  {{ m.board_member_name }} <br><br>  {{ m.board_title }}</div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                
+                    </div>
+                {% endfor %}
+   
+            </div>
+
+            <!-------------------------------------------------->
+
+            <div id="CONTACT" class="container-fluid" style="margin:8px;font-weight: bold;">
+              <div style="font-size: 40px;font-family: Arial, Helvetica, sans-serif;"><center><b>CONTACT US</b></center></div> 
+              <!-- <div style="margin: 8px;font-size: 20px"><img src=" {% static 'board/instagram.png' %} " width="40px" height="40px"> : <a href="https://www.instagram.com/vittrekkingclub/?hl=en" target="blank"  style="color: black;">@vittrekkingclub</a></div>
+              <div style="margin: 8px;font-size: 20px"><img src=" {% static 'board/facebook.png' %} " width="40px" height="40px"> : <a href="https://www.facebook.com/VitTrekkingClub/" target="blank" style="color: black;">@VitTrekkingClub</a><br></div> -->
+              <!-- <div style="margin: 8px;font-size: 20px;">trekkingclub@vit.ac.in </div> -->
+              <div><a class="btn btn-social-icon btn-instagram" target="blank" href="https://www.instagram.com/vittrekkingclub/?hl=en"><i class="fa fa-instagram fa-3x"></i></a> : <a target="blank" href="https://www.instagram.com/vittrekkingclub/?hl=en">@vittrekkingclub</a></div><br>
+              <div><a class="btn btn-social-icon btn-facebook" target="blank" href="https://www.facebook.com/VitTrekkingClub/"><i class="fa fa-facebook fa-3x"></i></a> : <a target="blank" href="https://www.facebook.com/VitTrekkingClub/">@VitTrekkingClub</a></div><br>
+              <div><a class="btn btn-social-icon btn-google" target="blank" href="trekkingclub@vit.ac.in"><i class="fa fa-envelope fa-3x"></i></a> : <a target="blank" href="mailto:trekkingclub@vit.ac.in">trekkingclub@vit.ac.in</a></div>
+            </div>
+
+
+    </body>
+</html>

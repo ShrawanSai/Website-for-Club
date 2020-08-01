@@ -1,0 +1,29 @@
+.carousel-item:hover .carousel-caption
+{
+    opacity: 1;
+}
+
+.carousel-caption{
+    opacity: 0;
+}
+.car_text{
+    margin-left: 58%;
+    margin-top: 5%;
+    text-align: justify;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+.carousel-caption{
+    position: absolute;
+    right: 55%;
+    left: 5%;
+}
+.carousel-inner img {
+    max-width: 60%;
+    max-height: auto;
+    overflow: hidden;
+    
+  } 

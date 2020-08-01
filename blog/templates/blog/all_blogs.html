@@ -1,0 +1,18 @@
+<h1 id="blogtitle" class="font-weight-bold text-center">Blogs by VTC</h1>
+
+<h3 class="text-center mb-5">We have {{ blogs.count }} blog{{ blogs.count|pluralize }} for you written by our amazing editorial team</h3>
+<hr>
+{% for blog in blogs %}
+<div class="row justify-content-center my-3">
+  <div class="col-md-10">
+  
+    
+    <a href="{% url 'blog:detail' blog.id %}"> <h3>{{ blog.title }}</h3></a>
+  
+
+    <h5>{{ blog.date|date:'M d Y'|upper }}</h5>
+    <h4>{{ blog.description|striptags|truncatechars:100 }}</h4>
+  </div>
+</div>
+<hr>
+{% endfor %}
